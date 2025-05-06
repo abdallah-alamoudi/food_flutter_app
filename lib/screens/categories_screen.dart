@@ -4,6 +4,7 @@ import 'package:food/models/food_category.dart';
 import 'package:food/widget/category_item.dart';
 
 class CategoriesScreen extends StatelessWidget {
+  static const routeName = "/categories";
   const CategoriesScreen({super.key});
 
   @override
