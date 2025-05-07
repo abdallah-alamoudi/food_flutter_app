@@ -30,6 +30,10 @@ final List<Meal> meals = [
         'https://img.taste.com.au/sE-X5HqY/taste/2024/03/5-ingredient-turbo-charged-spaghetti-recipe-196959-1.jpg',
     complexity: Complexity.Challenging,
     affordability: Affordability.Luxurious,
+    isGlutenFree: false,
+    isLactoseFree: false,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm2',
@@ -43,6 +47,10 @@ final List<Meal> meals = [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWwNz-YV88e3LFP6iisBcZT-loky1VotV4aQ&s',
     complexity: Complexity.Hard,
     affordability: Affordability.Affordable,
+    isGlutenFree: false,
+    isLactoseFree: false,
+    isVegan: false,
+    isVegetarian: true,
   ),
   Meal(
     id: 'm3',
@@ -61,6 +69,10 @@ final List<Meal> meals = [
         'https://assets.bonappetit.com/photos/656f48d75b552734225041ba/1:1/w_3129,h_3129,c_limit/20231120-WEB-Lasanga-6422.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Luxurious,
+    isGlutenFree: false,
+    isLactoseFree: false,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm4',
@@ -78,6 +90,10 @@ final List<Meal> meals = [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UcnrX7s33U9sv3tsJ21FQJsjA3AoyGvbQw&s',
     complexity: Complexity.Simple,
     affordability: Affordability.Luxurious,
+    isGlutenFree: true,
+    isLactoseFree: false,
+    isVegan: false,
+    isVegetarian: true,
   ),
   Meal(
     id: 'm5',
@@ -101,6 +117,10 @@ final List<Meal> meals = [
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpiRjt4A-TRZSmORiY_YiHwruO-I1TBpw42A&s',
     complexity: Complexity.Simple,
     affordability: Affordability.Luxurious,
+    isGlutenFree: false,
+    isLactoseFree: false,
+    isVegan: false,
+    isVegetarian: true,
   ),
   Meal(
     id: 'm6',
@@ -122,6 +142,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/kungpao.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // typically contains soy sauce (gluten)
+    isLactoseFree: true,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm7',
@@ -133,6 +157,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/sweetandsour.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Pricey,
+    isGlutenFree: false, // batter or soy sauce may contain gluten
+    isLactoseFree: true,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm8',
@@ -150,6 +178,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/mapotofu.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Luxurious,
+    isGlutenFree: false, // chili bean paste often contains wheat
+    isLactoseFree: true,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm9',
@@ -161,6 +193,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/pekingduck.jpg',
     complexity: Complexity.Challenging,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // pancakes and hoisin sauce contain gluten
+    isLactoseFree: true,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm10',
@@ -172,6 +208,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/dimsum.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // most dim sum wrappers contain wheat
+    isLactoseFree: true,
+    isVegan: false, // contains shrimp and possibly meat
+    isVegetarian: false,
   ),
   Meal(
     id: 'm11',
@@ -183,6 +223,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/tacosalpastor.jpg',
     complexity: Complexity.Challenging,
     affordability: Affordability.Affordable,
+    isGlutenFree: true, // corn tortillas are gluten-free
+    isLactoseFree: true,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm12',
@@ -206,6 +250,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/chilesrellenos.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Pricey,
+    isGlutenFree: false, // battered with wheat flour
+    isLactoseFree: false, // if cheese is used
+    isVegan: false,
+    isVegetarian: true, // if cheese is used (meat-free version)
   ),
   Meal(
     id: 'm13',
@@ -217,6 +265,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/guacamole.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Affordable,
+    isGlutenFree: true,
+    isLactoseFree: true,
+    isVegan: true,
+    isVegetarian: true,
   ),
   Meal(
     id: 'm14',
@@ -232,6 +284,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/enchiladas.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // depends on type of tortilla
+    isLactoseFree: false, // contains cheese
+    isVegan: false,
+    isVegetarian: false, // includes meat and cheese
   ),
   Meal(
     id: 'm15',
@@ -243,6 +299,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/tamales.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Luxurious,
+    isGlutenFree: true, // masa is corn-based
+    isLactoseFree: true,
+    isVegan: false, // meat-based filling
+    isVegetarian: false,
   ),
   Meal(
     id: 'm16',
@@ -254,6 +314,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/butterchicken.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Pricey,
+    isGlutenFree: true, // no gluten in typical ingredients
+    isLactoseFree: false, // contains cream and butter
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm17',
@@ -265,6 +329,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/palakpaneer.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Affordable,
+    isGlutenFree: true,
+    isLactoseFree: false, // paneer is dairy
+    isVegan: false,
+    isVegetarian: true,
   ),
   Meal(
     id: 'm18',
@@ -276,6 +344,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/biryani.jpg',
     complexity: Complexity.Challenging,
     affordability: Affordability.Luxurious,
+    isGlutenFree: true, // all ingredients naturally gluten-free
+    isLactoseFree: false, // includes yogurt
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm19',
@@ -287,6 +359,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/cholebhature.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // bhature made from wheat flour
+    isLactoseFree: true, // typically dairy-free
+    isVegan: true, // no animal products in basic version
+    isVegetarian: true,
   ),
   Meal(
     id: 'm20',
@@ -298,6 +374,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/masaladosa.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Affordable,
+    isGlutenFree: true, // rice and urad dal batter is gluten-free
+    isLactoseFree: true,
+    isVegan: true, // no dairy, egg, or meat
+    isVegetarian: true,
   ),
   Meal(
     id: 'm21',
@@ -315,6 +395,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/sushi.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Luxurious,
+    isGlutenFree: false, // soy sauce usually contains gluten
+    isLactoseFree: true,
+    isVegan: false, // not vegan if it includes fish
+    isVegetarian: false, // unless specifically made vegetarian
   ),
   Meal(
     id: 'm22',
@@ -326,6 +410,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/ramen.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Luxurious,
+    isGlutenFree: false, // ramen noodles and soy sauce may contain gluten
+    isLactoseFree: true,
+    isVegan: false, // contains pork and egg
+    isVegetarian: false,
   ),
   Meal(
     id: 'm23',
@@ -337,6 +425,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/tempura.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Pricey,
+    isGlutenFree: false, // batter is made with flour
+    isLactoseFree: true,
+    isVegan: false, // uses egg, and often shrimp
+    isVegetarian: false, // not if seafood is used
   ),
   Meal(
     id: 'm24',
@@ -354,6 +446,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/okonomiyaki.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // contains wheat flour and sauce may contain gluten
+    isLactoseFree: true,
+    isVegan: false, // contains egg and meat
+    isVegetarian: false,
   ),
   Meal(
     id: 'm25',
@@ -365,6 +461,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/donburi.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // soy sauce usually contains gluten
+    isLactoseFree: true,
+    isVegan: false, // contains meat and eggs
+    isVegetarian: false,
   ),
   Meal(
     id: 'm26',
@@ -376,6 +476,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/croissant.jpg',
     complexity: Complexity.Challenging,
     affordability: Affordability.Luxurious,
+    isGlutenFree: false, // contains wheat flour
+    isLactoseFree: false, // contains butter and milk
+    isVegan: false, // contains butter and milk
+    isVegetarian: true, // no meat
   ),
   Meal(
     id: 'm27',
@@ -387,6 +491,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/ratatouille.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Pricey,
+    isGlutenFree: true,
+    isLactoseFree: true,
+    isVegan: true,
+    isVegetarian: true,
   ),
   Meal(
     id: 'm28',
@@ -402,6 +510,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/coqauvin.jpg',
     complexity: Complexity.Hard,
     affordability: Affordability.Luxurious,
+    isGlutenFree: true,
+    isLactoseFree: true,
+    isVegan: false,
+    isVegetarian: false,
   ),
   Meal(
     id: 'm29',
@@ -413,6 +525,10 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/quichelorraine.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Pricey,
+    isGlutenFree: false, // crust typically contains gluten
+    isLactoseFree: false, // contains cream and cheese
+    isVegan: false, // contains eggs, dairy, and meat
+    isVegetarian: false, // contains bacon
   ),
   Meal(
     id: 'm30',
@@ -424,5 +540,9 @@ final List<Meal> meals = [
     imageUrl: 'https://example.com/crepes.jpg',
     complexity: Complexity.Simple,
     affordability: Affordability.Affordable,
+    isGlutenFree: false, // contains flour
+    isLactoseFree: false, // contains milk and butter
+    isVegan: false, // contains eggs and milk
+    isVegetarian: true, // no meat by default
   ),
 ];

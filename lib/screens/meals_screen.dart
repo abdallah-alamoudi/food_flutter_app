@@ -6,8 +6,9 @@ import 'package:food/widget/meal_item.dart';
 
 class MealsScreen extends StatelessWidget {
   static const routeName = "/meals";
+  final List<Meal> meals;
 
-  const MealsScreen({super.key});
+  const MealsScreen({super.key, required this.meals});
 
   @override
   Widget build(BuildContext context) {
