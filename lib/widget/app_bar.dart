@@ -7,9 +7,12 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return PreferredSize(
-      preferredSize: Size(double.infinity, 50),
+      preferredSize: Size(double.infinity, 150),
       child: AppBar(
-        title: Text(title),
+        title: Text(
+          title,
+          style: TextStyle(fontFamily: "RobotoCondensed"),
+        ),
       ),
     );
   }

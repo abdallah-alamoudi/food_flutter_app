@@ -50,22 +50,30 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: AppBarTheme(backgroundColor: Color(0xff413C58)),
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          elevation: 32.0,
-          backgroundColor: Color(0xff413C58),
-        ),
-        primarySwatch: Colors.amber,
-        primaryColor: Colors.blueAccent[200],
-        colorScheme: ColorScheme.light(
-          primary: Color(0xffC4FFB2),
-          secondary: Color(0xffCD5334),
-          onPrimary: Color(0xff17BEBB),
-          surface: Color(0xffEDB88B),
-        ),
-      ),
-      title: "food",
+          fontFamily: "RobotoCondensed",
+          colorScheme: ColorScheme.light(
+            error: Color(0xff902D41),
+            primary: Color(0xff13505B),
+            secondary: Color(0xffA5243D),
+            brightness: Brightness.light,
+            surface: Color(0xffFFFFF2),
+            onSecondary: Color(0xffDE6449),
+            onPrimary: Color(0xff040404),
+            onSurface: Color(0xff040404),
+          ),
+          appBarTheme: AppBarTheme(
+              backgroundColor: Color(0xff13505B),
+              elevation: 10,
+              shadowColor: Colors.black,
+              centerTitle: true,
+              foregroundColor: Color(0xff040404),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadiusDirectional.vertical(
+                bottom: Radius.circular(20),
+              )))),
+      title: "Foody",
       routes: {
         "/": (ctx) => TabsScreen(),
         CategoriesScreen.routeName: (ctx) => CategoriesScreen(),
